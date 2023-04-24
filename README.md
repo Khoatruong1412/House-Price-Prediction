@@ -13,4 +13,11 @@
 - This is the number of features for properties data with target living_price. (living_price = liv/lot_ratio * price if liv/lot_ratio <= 1).
 
 ![Properties_features](https://user-images.githubusercontent.com/89664955/234098142-b5ba6454-f207-4fad-8f2d-a95b06ee110e.JPG)
+- After finished processing, we performed EDA on this data.
+
+### Data Analysis
+- Using TSNE 2D, a dimensionality reduction technique, to see any impacts of high-dimensional features on the housing prices.
+![image](https://user-images.githubusercontent.com/89664955/234099183-9489bc52-f521-4a10-8889-51506d70f36a.png)
+
+
 
