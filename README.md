@@ -9,7 +9,7 @@
 - End up with location and properties of houses data. (For more preferences: please look into the Overall_progress.pptx in Time Series Analysis Folder.)
 - This is the features and target (price/lotsqft) for the location data.
 ![Location_data](https://user-images.githubusercontent.com/89664955/234097468-0d8e703a-e48a-40f7-9037-32e4bdf83e2f.JPG)
-- This is the number of features for properties data. 
+- This is the number of features for properties data with target living_price. (living_price = liv/lot_ratio * price if liv/lot_ratio <= 1)
 
 ![Properties_features](https://user-images.githubusercontent.com/89664955/234098142-b5ba6454-f207-4fad-8f2d-a95b06ee110e.JPG)
 
