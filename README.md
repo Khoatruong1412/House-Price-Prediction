@@ -6,4 +6,4 @@
 - Pull data from the Rapid-API Zillow.com to get the housing data that contains houses that are currently on sale.
   -   Disclamer: You need to buy the API Key to pull down the data. Paths in the Python files need to be changed to ensure that the codes are running.
 - Clean the datasets to ensure that it contains only important features.
-- End up with location and properties of houses data. (For more preferences: please look into the Overall_progress.pptx)
+- End up with location and properties of houses data. (For more preferences: please look into the Overall_progress.pptx in Time Series Analysis File.)
