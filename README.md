@@ -1,6 +1,7 @@
 # House-Price-Prediction
 - This repository is dedicated to analyse the features that affect housing prices and predict them for 10 different counties: Wise, Denton, Collin, Parker, Tarrant, Dallas, Rockwall, Kaufman, Johnson, Ellis.
 - Predicted price can last to at least one quarter to a year with small deviations.
+- With a DL model, save less time on the picking the house you want to buy!
 
 ### Data Cleaning and Processing
 - Pull data from the Rapid-API Zillow.com to get the housing data that contains houses that are currently on sale.
@@ -26,6 +27,13 @@
 - liv/lot_ratio = living Area (sqft) / lot Area (sqft)
 - The Map of liv/lot_ratio across the 10 counties. Counties with more cities such as Dallas and Tarrant have a bigger liv/lot_ratio than 'countryside' counties such as Parker and Wise.
 ![image](https://user-images.githubusercontent.com/89664955/234101606-d0093ed6-e879-4195-89c2-045e9ac240c4.png)
+
+##### Liv/lot_ratio vs. price/lotsqft
+- Fit a regression line through the scatter plot. As Liv/lot_ratio increase, price/lotsqft also increases.
+![image](https://user-images.githubusercontent.com/89664955/234101844-b76ab96a-f128-43fc-a61e-4c35a7ab3fe1.png)
+- The correlation matrix between the 2 variables.
+![image](https://user-images.githubusercontent.com/89664955/234101879-3267d462-6745-4600-92e1-ef0d296b5fdc.png)
+
 
 
 
