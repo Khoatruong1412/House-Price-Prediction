@@ -8,4 +8,4 @@
 - Clean the datasets to ensure that it contains only important features.
 - End up with location and properties of houses data. (For more preferences: please look into the Overall_progress.pptx in Time Series Analysis File.)
 
-![Alt text](/House Capstone Project/Time_Series_Analysis/progress_presentation/Location_data.JPG)
+![Alt text!](/House Capstone Project/Time_Series_Analysis/progress_presentation/Location_data.jpg)
