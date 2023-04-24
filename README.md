@@ -59,23 +59,23 @@
 - Houses that are in the range between $250,000 to $1,000,000, which are most of our samples, have predicted values that are closer to the actual prices while houses that are above $1,000,000 are usually underestimated. 
 - The lower 50% of the datasets have APE (Absolute Percentage Error) around 6.8%. The MAPE (Mean absolute percentage error) is almost at 10% throughout the months.
 
-##Conclusions:
+## Conclusions:
 - Location of houses are important to the point that we need a separate model to predict the price correctly same for the inner part of the house.
 - To check why ANN models performed better, please look for the powerpoints in Time_Series_Analysis/progress_presentation to understand why I pick ANN models for predicting all of these targets.
 
-##Future Work:
+## Future Work:
 - Rapid API has created a new command line that you can pull recently Sold homes' last posted prices. Need these data to improve the model performance.
 - Incorporate Time Series Analysis to get better housing predictions.
 
-#How to reproduce results:
-- To get housing data from the beginning, you need to subscribe to Rapid API Zillow.com to get housing data. Moreover, redirect your data with different paths as you see fit.
+# How to reproduce results:
+- To get housing data from the beginning, you need to subscribe to Rapid API Zillow.com to get housing data. Moreover, redirect your data with different paths as you see fit. Website: https://rapidapi.com/apimaker/api/zillow-com1/.
 - Using the 3 files to pull these data and have clean data for analysis: Data pulling from api.ipynb, Cleaning the data from API propertyExtendedSeach.ipynb, Cleaning the houses properties data_part_3.ipynb.
 - EDA can be found in the Data Analysis folder.
 - Supervised Learning and other traditional models' performance can be found in Time_Series_Analysis.
 - File that build the 3 complete ANN models: Combination_DLs_final.ipynb.
 **Disclaimer: Most of the training_data or raw data are not published in the github repository because they are larger than 100MB in total. But with the instructions above and comments in the notebook, you will be able to replicate with what I have!**
 
-#Packages:
+# Packages:
 - Pandas, numpy, etc: Essentials packages for data cleaning and analysis
 - Tensorflow and Sklearn: Deep learning (ANN) with tensorflow and traditional models such as Random Forest with Sklearn.
 
