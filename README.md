@@ -46,8 +46,13 @@
   - ANN_location: the model is built to predict the price/lotsqft based on location.
   - ANN_properties: the model is built to predice the living_price based on the inner part (interior) of the house.
   - ANN_price: Use the other 2 outputs of these models and with other raw features to predict the housing price.
-    - Raw features: LivingAreaValue, LotAreaValue.
-    - Derived features: Liv/lot_ratio, Predicted_orice/lotsqft, Predicted_living_price
+    - Raw features: LivingAreaValue, LotArea.
+    - Derived features: Liv/lot_ratio, Predicted_orice/lotsqft, Predicted_living_price, predicted_price1 (ANN_location's output * LotArea), predicted_price2 (ANN_properties_output * (1/liv_lot_ratio)).
+    - Target: Actual housing prices.
+- Model performance (R-squared) comparison:
+![image](https://user-images.githubusercontent.com/89664955/234106776-13590f04-0ded-4932-94e1-84f66904c703.png)
+![image](https://user-images.githubusercontent.com/89664955/234106805-a7f3ae69-2d6c-4e63-b51b-34d7df10c430.png)
+- The model generalizes well.
 
 
 
