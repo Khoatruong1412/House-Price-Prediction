@@ -7,3 +7,4 @@
   -   Disclamer: You need to buy the API Key to pull down the data. Paths in the Python files need to be changed to ensure that the codes are running.
 - Clean the datasets to ensure that it contains only important features.
 - End up with location and properties of houses data. (For more preferences: please look into the Overall_progress.pptx in Time Series Analysis File.)
+![Alt text](/House Capstone Project/progress_presentation/Location_data.jpg "Optional title")
