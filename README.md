@@ -2,7 +2,6 @@
 - This repository is dedicated to analyse the features that affect housing prices and predict them for 10 different counties: Wise, Denton, Collin, Parker, Tarrant, Dallas, Rockwall, Kaufman, Johnson, Ellis.
 - Predicted price can last to at least one quarter to a year with small deviations.
 - With a DL model, save less time on the picking the house you want to buy!
-- 
 
 ### Data Cleaning and Processing
 - Pull data from the Rapid-API Zillow.com to get the housing data that contains houses that are currently on sale.
@@ -42,6 +41,7 @@
 ![image](https://user-images.githubusercontent.com/89664955/234104064-50eeea34-9368-4aff-8fd8-39b36e9075d9.png)
 
 ### Supervised learning (Housing prices prediction)
+- Cross 5 Folds Validation to evaluate the mode performance.
 - Build 3 ANN models for housing price prediction:
   - ANN_location: the model is built to predict the price/lotsqft based on location.
   - ANN_properties: the model is built to predice the living_price based on the inner part (interior) of the house.
@@ -59,8 +59,25 @@
 - Houses that are in the range between $250,000 to $1,000,000, which are most of our samples, have predicted values that are closer to the actual prices while houses that are above $1,000,000 are usually underestimated. 
 - The lower 50% of the datasets have APE (Absolute Percentage Error) around 6.8%. The MAPE (Mean absolute percentage error) is almost at 10% throughout the months.
 
+##Conclusions:
+- Location of houses are important to the point that we need a separate model to predict the price correctly same for the inner part of the house.
+- To check why ANN models performed better, please look for the powerpoints in Time_Series_Analysis/progress_presentation to understand why I pick ANN models for predicting all of these targets.
 
+##Future Work:
+- Rapid API has created a new command line that you can pull recently Sold homes' last posted prices. Need these data to improve the model performance.
+- Incorporate Time Series Analysis to get better housing predictions.
 
+#How to reproduce results:
+- To get housing data from the beginning, you need to subscribe to Rapid API Zillow.com to get housing data. Moreover, redirect your data with different paths as you see fit.
+- Using the 3 files to pull these data and have clean data for analysis: Data pulling from api.ipynb, Cleaning the data from API propertyExtendedSeach.ipynb, Cleaning the houses properties data_part_3.ipynb.
+- EDA can be found in the Data Analysis folder.
+- Supervised Learning and other traditional models' performance can be found in Time_Series_Analysis.
+- File that build the 3 complete ANN models: Combination_DLs_final.ipynb.
+**Disclaimer: Most of the training_data or raw data are not published in the github repository because they are larger than 100MB in total. But with the instructions above and comments in the notebook, you will be able to replicate with what I have!**
+
+#Packages:
+- Pandas, numpy, etc: Essentials packages for data cleaning and analysis
+- Tensorflow and Sklearn: Deep learning (ANN) with tensorflow and traditional models such as Random Forest with Sklearn.
 
 
 
