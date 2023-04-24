@@ -7,6 +7,7 @@
   -   Disclamer: You need to buy the API Key to pull down the data. Paths in the Python files need to be changed to ensure that the codes are running.
 - Clean the datasets to ensure that it contains only important features.
 - End up with location and properties of houses data. (For more preferences: please look into the Overall_progress.pptx in Time Series Analysis File.)
+- This is the features and target (price/lotsqft) for the location data.
+![Location_data](https://user-images.githubusercontent.com/89664955/234097468-0d8e703a-e48a-40f7-9037-32e4bdf83e2f.JPG)
 
-![Alt text](House Capstone Project/Time_Series_Analysis/progress_presentation/Location_data.jpg)
 
