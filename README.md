@@ -52,7 +52,7 @@
 - Model performance (R-squared) comparison:
 ![image](https://user-images.githubusercontent.com/89664955/234106776-13590f04-0ded-4932-94e1-84f66904c703.png)
 ![image](https://user-images.githubusercontent.com/89664955/234106805-a7f3ae69-2d6c-4e63-b51b-34d7df10c430.png)
-- The model generalizes well. I also looking into the median of absolute errors of all the samples when they are in test data. Here is the result.
+- The model generalizes well. I also looking into the median of absolute errors of all the samples when they are in test data.
 ![image](https://user-images.githubusercontent.com/89664955/234107294-d225b0d9-1f7e-48b9-9dfd-651854fd79b2.png)
 ![image](https://user-images.githubusercontent.com/89664955/234107318-93680a25-9ac4-442c-b66c-6a8e78df7aa5.png)
 ![image](https://user-images.githubusercontent.com/89664955/234107385-985019bb-d6dc-443b-b968-ef2049d58dba.png)
