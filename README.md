@@ -47,7 +47,7 @@
   - ANN_properties: the model is built to predice the living_price based on the inner part (interior) of the house.
   - ANN_price: Use the other 2 outputs of these models and with other raw features to predict the housing price.
     - Raw features: LivingAreaValue, LotAreaValue.
-    - Derived features: Liv/lot_ratio, Predicted
+    - Derived features: Liv/lot_ratio, Predicted_orice/lotsqft, Predicted_living_price
 
 
 
