@@ -41,6 +41,14 @@
 ![image](https://user-images.githubusercontent.com/89664955/234104050-0f22c903-e489-4eae-ab28-fa834cf1c3f3.png)
 ![image](https://user-images.githubusercontent.com/89664955/234104064-50eeea34-9368-4aff-8fd8-39b36e9075d9.png)
 
+##### Supervised learning
+- Build 3 ANN models for housing price prediction:
+  - ANN_location: the model is built to predict the price/lotsqft based on location.
+  - ANN_properties: the model is built to predice the living_price based on the inner part (interior) of the house.
+  - ANN_price: Use the other 2 outputs of these models and with other raw features to predict the housing price.
+    - Raw features: LivingAreaValue, LotAreaValue.
+    - Derived features: Liv/lot_ratio, Predicted
+
 
 
 
