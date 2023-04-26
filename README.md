@@ -1,7 +1,8 @@
 # House-Price-Prediction
 - This repository is dedicated to analyse the features that affect housing prices and predict them for 10 different counties: Wise, Denton, Collin, Parker, Tarrant, Dallas, Rockwall, Kaufman, Johnson, Ellis.
 - Predicted price can last to at least one quarter to a year with small deviations.
-- With a DL model, save less time on the picking the house you want to buy!
+- The predictions can give better estimate than an average home buyer.
+- With a DL model, you can save less time on the picking the house you want to buy.
 
 ### Data Cleaning and Processing
 - Pull data from the Rapid-API Zillow.com to get the housing data that contains houses that are currently on sale.
