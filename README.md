@@ -21,7 +21,7 @@
 ##### Unsupervised learning TSNE 2D
 - Using TSNE 2D, a dimensionality reduction technique, to see any impacts of high-dimensional features on the housing prices.
 ![image](https://user-images.githubusercontent.com/89664955/234099183-9489bc52-f521-4a10-8889-51506d70f36a.png)
-- There are some features (without location features) that are more important than the others that can really distinguish housing prices.
+- There are some features (without location features) that are more important than the others can really distinguish housing prices.
 - Expensive houses and cheap houses are distinct groups while moderately priced houses are in a mix. 
 
 ##### Map of liv/lot_ratio distribution and price/lot_sqft distribution
@@ -56,9 +56,14 @@
 - The model generalizes well. I also looking into the distribution of errors when they are in the test dataset.
 ![image](https://user-images.githubusercontent.com/89664955/235806606-3ad629ad-c18f-4bf4-8c05-598ab304ad2d.png)
 ![image](https://user-images.githubusercontent.com/89664955/235806638-6b502de2-70c5-4603-ac72-e8dfd20ec3f3.png)
+
+- We can see that the monthly mean errors are around $1636.33 to $14,686.50 and the standard deviation of the errors are around $77638.48 to $98124.65. This shows that even though most of the time the model made accurate results, they are also inconsistent and this could due to many extreme outliers existing in these monthly datasets.
+
 ![image](https://user-images.githubusercontent.com/89664955/234107385-985019bb-d6dc-443b-b968-ef2049d58dba.png)
 - Houses that are in the range between $250,000 to $1,000,000, which are most of our samples, have predicted values that are closer to the actual prices while houses that are above $1,000,000 are usually underestimated. 
-- The lower 50% of the datasets have APE (Absolute Percentage Error) around 6.8%. The MAPE (Mean absolute percentage error) is almost at 10% throughout the months.
+- I also plot the residuals of all the monthly predictions to check if there exists any biases in the datasets.
+![image](https://user-images.githubusercontent.com/89664955/235808444-bb64cea3-869f-4269-a464-76a272ff9863.png)
+- Even if the residual plots are plumbed together, this is due to some extreme outliers. For instances, houses that are only $300000 but the model predicts it to be a $2 million or even $4 million even though we capped our target to $2 million.
 
 ## Conclusions:
 - Location of houses are important to the point that we need a separate model to predict the price correctly same for the inner part of the house.
@@ -66,11 +71,13 @@
 
 ## Future Work:
 - Rapid API has created a new command line that you can pull recently Sold homes' last posted prices. Need these data to improve the model performance.
-- Incorporate Time Series Analysis to get better housing predictions.
+- Incorporate Time Series Analysis to get better housing predictions. For instance, is there a relationship between CPI or fund with housing price in DFW.
+- Features such as median household income based on zipcode area, hospitals, etc. can affect the housing prices.
 
 # How to reproduce results:
 - To get housing data from the beginning, you need to subscribe to Rapid API Zillow.com to get housing data. Moreover, redirect your data with different paths as you see fit. Website: https://rapidapi.com/apimaker/api/zillow-com1/.
 - Using the 3 files to pull these data and have clean data for analysis: Data pulling from api.ipynb, Cleaning the data from API propertyExtendedSeach.ipynb, Cleaning the houses properties data_part_3.ipynb.
+- You also need the government data from US Census Bureau. Website: https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/.
 - EDA can be found in the Data Analysis folder.
 - Supervised Learning and other traditional models' performance can be found in Time_Series_Analysis.
 - File that build the 3 complete ANN models: Combination_DLs_final.ipynb.
