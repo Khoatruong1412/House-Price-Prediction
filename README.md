@@ -39,7 +39,7 @@
 
 - The correlation matrix between the 2 variables.
 ![image](https://user-images.githubusercontent.com/89664955/234101879-3267d462-6745-4600-92e1-ef0d296b5fdc.png)
-<img src="https://user-images.githubusercontent.com/89664955/234101844-b76ab96a-f128-43fc-a61e-4c35a7ab3fe1.png" width = 500 height = 460>
+<img src="https://user-images.githubusercontent.com/89664955/234101879-3267d462-6745-4600-92e1-ef0d296b5fdc.png" width = 500 height = 460>
 
 - liv/lot_ratio and other numerical features also have effects on housing prices.
 ![image](https://user-images.githubusercontent.com/89664955/234104050-0f22c903-e489-4eae-ab28-fa834cf1c3f3.png)
