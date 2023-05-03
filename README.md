@@ -35,6 +35,7 @@
 ##### Liv/lot_ratio vs. price/lotsqft and living_price
 - Fit a regression line through the scatter plot. As Liv/lot_ratio increase, price/lotsqft also increases.
 ![image](https://user-images.githubusercontent.com/89664955/234101844-b76ab96a-f128-43fc-a61e-4c35a7ab3fe1.png)
+<img src="https://user-images.githubusercontent.com/89664955/234101844-b76ab96a-f128-43fc-a61e-4c35a7ab3fe1.png" width = 600 height = 300>
 - The correlation matrix between the 2 variables.
 ![image](https://user-images.githubusercontent.com/89664955/234101879-3267d462-6745-4600-92e1-ef0d296b5fdc.png)
 - liv/lot_ratio and other numerical features also have effects on housing prices.
