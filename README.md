@@ -79,7 +79,7 @@
 # How to reproduce results:
 - To get housing data from the beginning, you need to subscribe to Rapid API Zillow.com to get housing data. Moreover, redirect your data with different paths as you see fit. Website: https://rapidapi.com/apimaker/api/zillow-com1/.
 - Using the 3 files to pull these data and have clean data for analysis: Data pulling from api.ipynb, Cleaning the data from API propertyExtendedSeach.ipynb, Cleaning the houses properties data_part_3.ipynb.
-- You also need the government data from US Census Bureau. Website: https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/.
+- You also need the government data from US Census Bureau to the counties, school districts, and zipcodes' longitudes and latitudes. Website: https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/.
 - EDA can be found in the Data Analysis folder.
 - Supervised Learning and other traditional models' performance can be found in Time_Series_Analysis.
 - File that build the 3 complete ANN models: Combination_DLs_final.ipynb.
